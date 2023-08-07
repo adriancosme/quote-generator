@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@aws-amplify/api-graphql':
+    specifier: ^3.4.6
+    version: 3.4.6(react-native@0.72.3)
   '@aws-amplify/ui-react':
     specifier: ^5.0.7
     version: 5.0.7(@types/react@18.2.18)(aws-amplify@5.3.6)(react-dom@18.2.0)(react@18.2.0)
@@ -28,13 +31,7 @@ dependencies:
     version: 18.2.7
   aws-amplify:
     specifier: ^5.3.6
-    version: 5.3.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
-  aws-crt:
-    specifier: ^1.17.1
-    version: 1.17.1
-  encoding:
-    specifier: ^0.1.13
-    version: 0.1.13
+    version: 5.3.6(react-native@0.72.3)
   eslint:
     specifier: 8.46.0
     version: 8.46.0
@@ -77,11 +74,11 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: false
 
-  /@aws-amplify/analytics@6.5.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/analytics@6.5.0(react-native@0.72.3):
     resolution: {integrity: sha512-VH4CoIQN9Q6IbY6uJ+LlAXgwznFOQE1jk63aWE9WMNWFoU+x4F1hNFKCzKscdCKZy+Suy+iccqCggb3QZP1sVQ==}
     dependencies:
-      '@aws-amplify/cache': 5.1.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/cache': 5.1.6(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       '@aws-sdk/client-firehose': 3.6.1(react-native@0.72.3)
       '@aws-sdk/client-kinesis': 3.6.1(react-native@0.72.3)
       '@aws-sdk/client-personalize-events': 3.6.1(react-native@0.72.3)
@@ -94,14 +91,14 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/api-graphql@3.4.6(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/api-graphql@3.4.6(react-native@0.72.3):
     resolution: {integrity: sha512-HZAxfQYAyraau8btsjx2f4X6UjkJPWUKO5Nn6C9aDeSZjqzzRV3NNn+RWWZuKCp/lxdpQfBmmjpW29cRa3B3Hw==}
     dependencies:
-      '@aws-amplify/api-rest': 3.5.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/auth': 5.6.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/cache': 5.1.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/pubsub': 5.5.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/api-rest': 3.5.0(react-native@0.72.3)
+      '@aws-amplify/auth': 5.6.0(react-native@0.72.3)
+      '@aws-amplify/cache': 5.1.6(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-amplify/pubsub': 5.5.0(react-native@0.72.3)
       graphql: 15.8.0
       tslib: 1.14.1
       uuid: 3.4.0
@@ -112,10 +109,10 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/api-rest@3.5.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/api-rest@3.5.0(react-native@0.72.3):
     resolution: {integrity: sha512-GUWAkBaDErSCdoOq6qy8xHp7URiXb/iJeN/eYVKs0vvEKC28wFpY63mXTjOIMsAq+KsUSf1eWQWCYkjDPuhw4A==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       axios: 0.26.0
       tslib: 1.14.1
       url: 0.11.0
@@ -125,11 +122,11 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/api@5.4.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/api@5.4.0(react-native@0.72.3):
     resolution: {integrity: sha512-UwKkmDwfgQ3GeRPbn1Jxj4eBI5tMUzXZXa2tUl7k1BUDbI2MQj5OHedCt1pULqD6T4D8yKAfWfQ+py8bEECu5g==}
     dependencies:
-      '@aws-amplify/api-graphql': 3.4.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/api-rest': 3.5.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/api-graphql': 3.4.6(react-native@0.72.3)
+      '@aws-amplify/api-rest': 3.5.0(react-native@0.72.3)
       tslib: 1.14.1
     transitivePeerDependencies:
       - debug
@@ -137,11 +134,11 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/auth@5.6.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/auth@5.6.0(react-native@0.72.3):
     resolution: {integrity: sha512-iaFffdhzShLEhJy0RwXerKIKdIbyqq+DMIleaHYqppGql0E/Td/0C+skK135xZKc11NpmJAh+Yi5YEPhQKSacQ==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      amazon-cognito-identity-js: 6.3.1(encoding@0.1.13)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      amazon-cognito-identity-js: 6.3.1
       tslib: 1.14.1
       url: 0.11.0
     transitivePeerDependencies:
@@ -149,17 +146,17 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/cache@5.1.6(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/cache@5.1.6(react-native@0.72.3):
     resolution: {integrity: sha512-YdWBc5gpCfgwzsOCJoM/1CBwfKppibekQAD/4eYElq+jJ0M+qJBIo90pOGt98XkRkiP+qXb4HkqjF7wmwXQOGQ==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       tslib: 1.14.1
     transitivePeerDependencies:
       - encoding
       - react-native
     dev: false
 
-  /@aws-amplify/core@5.8.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/core@5.8.0(react-native@0.72.3):
     resolution: {integrity: sha512-c+bj4+ThsP1T7plfikK4+1jMrkLI9ns9ID2r4VYFZchPgbRYVXicRrEVZGOW3vXGIuuMD3ziKiUhbGNHfy1+7w==}
     dependencies:
       '@aws-crypto/sha256-js': 1.2.2
@@ -167,7 +164,7 @@ packages:
       '@aws-sdk/types': 3.6.1
       '@aws-sdk/util-hex-encoding': 3.6.1
       '@types/node-fetch': 2.6.4
-      isomorphic-unfetch: 3.1.0(encoding@0.1.13)
+      isomorphic-unfetch: 3.1.0
       react-native-url-polyfill: 1.3.0(react-native@0.72.3)
       tslib: 1.14.1
       universal-cookie: 4.0.4
@@ -177,14 +174,14 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/datastore@4.7.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/datastore@4.7.0(react-native@0.72.3):
     resolution: {integrity: sha512-EXx/F2y0coQ2sUEsgQOUtrZTBaQ46aO8Ya8Q2id5Xer0hFyLHySR8OTTu0OVUwpgGaBLYioka4iI6bpcIB1sgA==}
     dependencies:
-      '@aws-amplify/api': 5.4.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/auth': 5.6.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/pubsub': 5.5.0(encoding@0.1.13)(react-native@0.72.3)
-      amazon-cognito-identity-js: 6.3.1(encoding@0.1.13)
+      '@aws-amplify/api': 5.4.0(react-native@0.72.3)
+      '@aws-amplify/auth': 5.6.0(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-amplify/pubsub': 5.5.0(react-native@0.72.3)
+      amazon-cognito-identity-js: 6.3.1
       idb: 5.0.6
       immer: 9.0.6
       ulid: 2.3.0
@@ -197,11 +194,11 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/geo@2.3.0(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/geo@2.3.0(react-native@0.72.3):
     resolution: {integrity: sha512-U/tEGRO7EneK0gfYd8dfyhVmdjEbWQSgXSFGVmLpTkpTKg8O3ACc5U3ZqIkCZLYWJXnfs80TXySEpkt4xMiIZg==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-sdk/client-location': 3.186.3(aws-crt@1.17.1)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-sdk/client-location': 3.186.3
       '@turf/boolean-clockwise': 6.5.0
       camelcase-keys: 6.2.2
       tslib: 1.14.1
@@ -211,12 +208,12 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/interactions@5.2.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/interactions@5.2.6(react-native@0.72.3):
     resolution: {integrity: sha512-2jPQZcLmLznB5wr4tTvBlC2R/7Zc19V+F9kM+/OFLUR5saW2EeOgNt4IKq/pFAZgfgw30by5DkPuyynITYpIvg==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-sdk/client-lex-runtime-service': 3.186.3(aws-crt@1.17.1)
-      '@aws-sdk/client-lex-runtime-v2': 3.186.3(aws-crt@1.17.1)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-sdk/client-lex-runtime-service': 3.186.3
+      '@aws-sdk/client-lex-runtime-v2': 3.186.3
       base-64: 1.0.0
       fflate: 0.7.3
       pako: 2.0.4
@@ -227,11 +224,11 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/notifications@1.6.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/notifications@1.6.0(react-native@0.72.3):
     resolution: {integrity: sha512-2KIJaj/rLhr7BII6buaHteItOQLEBazlRYZCeZGyjH2Moyqz251xqHhflPmIFKyV4ukFHgXjzEVcVqg9L+YkjA==}
     dependencies:
-      '@aws-amplify/cache': 5.1.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/cache': 5.1.6(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       '@aws-amplify/rtn-push-notification': 1.1.2
       lodash: 4.17.21
       uuid: 3.4.0
@@ -240,11 +237,11 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/predictions@5.5.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/predictions@5.5.0(react-native@0.72.3):
     resolution: {integrity: sha512-ndHAEvlj4cU6pVPDqgjoa6Y61/UVcTsdGdgbzgwUqgoyEHM7SU64GwU+7EY8/0rbMdzmo+xFd8EnaNVTXJoAMw==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/storage': 5.9.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-amplify/storage': 5.9.0(react-native@0.72.3)
       '@aws-sdk/client-comprehend': 3.6.1(react-native@0.72.3)
       '@aws-sdk/client-polly': 3.6.1(react-native@0.72.3)
       '@aws-sdk/client-rekognition': 3.6.1(react-native@0.72.3)
@@ -260,12 +257,12 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/pubsub@5.5.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/pubsub@5.5.0(react-native@0.72.3):
     resolution: {integrity: sha512-/Wk3u7fHDeRoa7MZ/PYDMAHJ96sqKsOVnxxUdXUZ8mG8v3VJtc5dp40uMQ5+5z0sSp50pxNxgXXk7AfLRKL6ng==}
     dependencies:
-      '@aws-amplify/auth': 5.6.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/cache': 5.1.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/auth': 5.6.0(react-native@0.72.3)
+      '@aws-amplify/cache': 5.1.6(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       graphql: 15.8.0
       tslib: 1.14.1
       url: 0.11.0
@@ -280,10 +277,10 @@ packages:
     resolution: {integrity: sha512-hlqE76OLPljGFyZ8N6zOFf/yc6Svcc0gnjMVfN3liqlbsrA4u5eoeIi7iiMM/vUG9vCMKfu9rCfne2CQSBLyUA==}
     dev: false
 
-  /@aws-amplify/storage@5.9.0(encoding@0.1.13)(react-native@0.72.3):
+  /@aws-amplify/storage@5.9.0(react-native@0.72.3):
     resolution: {integrity: sha512-6t09//VfzBjLRXn6bDjxUHdSCwMpfKPUXkm+IEwrwPmZLnOIyd/IJreUXBa8AbTimkEWMPKlHRdOBYzo8GP1Fg==}
     dependencies:
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
       '@aws-sdk/md5-js': 3.6.1
       '@aws-sdk/types': 3.6.1
       events: 3.3.0
@@ -302,7 +299,7 @@ packages:
     dependencies:
       '@aws-amplify/ui': 5.6.9(aws-amplify@5.3.6)(xstate@4.38.2)
       '@xstate/react': 3.0.1(@types/react@18.2.18)(react@18.2.0)(xstate@4.38.2)
-      aws-amplify: 5.3.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
+      aws-amplify: 5.3.6(react-native@0.72.3)
       lodash: 4.17.21
       react: 18.2.0
       xstate: 4.38.2
@@ -329,7 +326,7 @@ packages:
       '@radix-ui/react-slider': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-tabs': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@xstate/react': 3.0.0(@types/react@18.2.18)(react@18.2.0)
-      aws-amplify: 5.3.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
+      aws-amplify: 5.3.6(react-native@0.72.3)
       classnames: 2.3.1
       deepmerge: 4.2.2
       lodash: 4.17.21
@@ -353,7 +350,7 @@ packages:
       xstate:
         optional: true
     dependencies:
-      aws-amplify: 5.3.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
+      aws-amplify: 5.3.6(react-native@0.72.3)
       csstype: 3.1.2
       lodash: 4.17.21
       style-dictionary: 3.7.1
@@ -365,7 +362,7 @@ packages:
     resolution: {integrity: sha512-8K0b1672qbv05chSoKpwGZ3fhvVp28Fg3AVHVkEHFl2lTLChO7wD/hTyyo8ING7uc31uZRt7bNra/hA74Td7Tw==}
     dependencies:
       '@aws-crypto/util': 1.2.2
-      '@aws-sdk/types': 3.6.1
+      '@aws-sdk/types': 3.186.0
       tslib: 1.14.1
     dev: false
 
@@ -396,7 +393,7 @@ packages:
       '@aws-crypto/sha256-js': 1.2.2
       '@aws-crypto/supports-web-crypto': 1.0.0
       '@aws-crypto/util': 1.2.2
-      '@aws-sdk/types': 3.6.1
+      '@aws-sdk/types': 3.186.0
       '@aws-sdk/util-locate-window': 3.310.0
       tslib: 1.14.1
     dev: false
@@ -418,7 +415,7 @@ packages:
     resolution: {integrity: sha512-Nr1QJIbW/afYYGzYvrF70LtaHrIRtd4TNAglX8BvlfxJLZ45SAmueIKYl5tWoNBPzp65ymXGFK0Bb1vZUpuc9g==}
     dependencies:
       '@aws-crypto/util': 1.2.2
-      '@aws-sdk/types': 3.6.1
+      '@aws-sdk/types': 3.186.0
       tslib: 1.14.1
     dev: false
 
@@ -445,7 +442,7 @@ packages:
   /@aws-crypto/util@1.2.2:
     resolution: {integrity: sha512-H8PjG5WJ4wz0UXAFXeJjWCW1vkvIJ3qUUD+rGRwJ2/hj+xT58Qle2MTql/2MGzkU+1JLAFuR6aJpLAjHwhmwwg==}
     dependencies:
-      '@aws-sdk/types': 3.6.1
+      '@aws-sdk/types': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
     dev: false
@@ -635,15 +632,15 @@ packages:
       - react-native
     dev: false
 
-  /@aws-sdk/client-lex-runtime-service@3.186.3(aws-crt@1.17.1):
+  /@aws-sdk/client-lex-runtime-service@3.186.3:
     resolution: {integrity: sha512-YP+GDY9OxyW4rJDqjreaNpiDBvH1uzO3ShJKl57hT92Kw2auDQxttcMf//J8dQXvrVkW/fVXCLI9TmtxS7XJOQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 2.0.0
       '@aws-crypto/sha256-js': 2.0.0
-      '@aws-sdk/client-sts': 3.186.3(aws-crt@1.17.1)
+      '@aws-sdk/client-sts': 3.186.3
       '@aws-sdk/config-resolver': 3.186.0
-      '@aws-sdk/credential-provider-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-node': 3.186.0
       '@aws-sdk/fetch-http-handler': 3.186.0
       '@aws-sdk/hash-node': 3.186.0
       '@aws-sdk/invalid-dependency': 3.186.0
@@ -669,7 +666,7 @@ packages:
       '@aws-sdk/util-defaults-mode-browser': 3.186.0
       '@aws-sdk/util-defaults-mode-node': 3.186.0
       '@aws-sdk/util-user-agent-browser': 3.186.0
-      '@aws-sdk/util-user-agent-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/util-user-agent-node': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.186.0
       '@aws-sdk/util-utf8-node': 3.186.0
       tslib: 2.6.1
@@ -677,15 +674,15 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-lex-runtime-v2@3.186.3(aws-crt@1.17.1):
+  /@aws-sdk/client-lex-runtime-v2@3.186.3:
     resolution: {integrity: sha512-4MJfSnb+qM8BYW4ToCvg7sDWN0NcEqK738hCZUV89cjp7pIHZ6osJuS/PsmZEommVj+71GviZ4buu5KUCfCGFQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 2.0.0
       '@aws-crypto/sha256-js': 2.0.0
-      '@aws-sdk/client-sts': 3.186.3(aws-crt@1.17.1)
+      '@aws-sdk/client-sts': 3.186.3
       '@aws-sdk/config-resolver': 3.186.0
-      '@aws-sdk/credential-provider-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-node': 3.186.0
       '@aws-sdk/eventstream-handler-node': 3.186.0
       '@aws-sdk/eventstream-serde-browser': 3.186.0
       '@aws-sdk/eventstream-serde-config-resolver': 3.186.0
@@ -716,7 +713,7 @@ packages:
       '@aws-sdk/util-defaults-mode-browser': 3.186.0
       '@aws-sdk/util-defaults-mode-node': 3.186.0
       '@aws-sdk/util-user-agent-browser': 3.186.0
-      '@aws-sdk/util-user-agent-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/util-user-agent-node': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.186.0
       '@aws-sdk/util-utf8-node': 3.186.0
       tslib: 2.6.1
@@ -724,15 +721,15 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-location@3.186.3(aws-crt@1.17.1):
+  /@aws-sdk/client-location@3.186.3:
     resolution: {integrity: sha512-LCMFgoWfvKBnZhhtl93RLhrsHCalM7huaxErHSKoqWDBUDP0i7rOX73qW8E25j/vQ4emEkT0d6ts1rDu4EnlNw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 2.0.0
       '@aws-crypto/sha256-js': 2.0.0
-      '@aws-sdk/client-sts': 3.186.3(aws-crt@1.17.1)
+      '@aws-sdk/client-sts': 3.186.3
       '@aws-sdk/config-resolver': 3.186.0
-      '@aws-sdk/credential-provider-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-node': 3.186.0
       '@aws-sdk/fetch-http-handler': 3.186.0
       '@aws-sdk/hash-node': 3.186.0
       '@aws-sdk/invalid-dependency': 3.186.0
@@ -758,7 +755,7 @@ packages:
       '@aws-sdk/util-defaults-mode-browser': 3.186.0
       '@aws-sdk/util-defaults-mode-node': 3.186.0
       '@aws-sdk/util-user-agent-browser': 3.186.0
-      '@aws-sdk/util-user-agent-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/util-user-agent-node': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.186.0
       '@aws-sdk/util-utf8-node': 3.186.0
       tslib: 2.6.1
@@ -884,7 +881,7 @@ packages:
       - react-native
     dev: false
 
-  /@aws-sdk/client-sso@3.186.0(aws-crt@1.17.1):
+  /@aws-sdk/client-sso@3.186.0:
     resolution: {integrity: sha512-qwLPomqq+fjvp42izzEpBEtGL2+dIlWH5pUCteV55hTEwHgo+m9LJPIrMWkPeoMBzqbNiu5n6+zihnwYlCIlEA==}
     engines: {node: '>=12.0.0'}
     dependencies:
@@ -915,7 +912,7 @@ packages:
       '@aws-sdk/util-defaults-mode-browser': 3.186.0
       '@aws-sdk/util-defaults-mode-node': 3.186.0
       '@aws-sdk/util-user-agent-browser': 3.186.0
-      '@aws-sdk/util-user-agent-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/util-user-agent-node': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.186.0
       '@aws-sdk/util-utf8-node': 3.186.0
       tslib: 2.6.1
@@ -923,14 +920,14 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/client-sts@3.186.3(aws-crt@1.17.1):
+  /@aws-sdk/client-sts@3.186.3:
     resolution: {integrity: sha512-mnttdyYBtqO+FkDtOT3F1FGi8qD11fF5/3zYLaNuFFULqKneaIwW2YIsjFlgvPGpmoyo/tNplnZwhQ9xQtT3Sw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 2.0.0
       '@aws-crypto/sha256-js': 2.0.0
       '@aws-sdk/config-resolver': 3.186.0
-      '@aws-sdk/credential-provider-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-node': 3.186.0
       '@aws-sdk/fetch-http-handler': 3.186.0
       '@aws-sdk/hash-node': 3.186.0
       '@aws-sdk/invalid-dependency': 3.186.0
@@ -957,7 +954,7 @@ packages:
       '@aws-sdk/util-defaults-mode-browser': 3.186.0
       '@aws-sdk/util-defaults-mode-node': 3.186.0
       '@aws-sdk/util-user-agent-browser': 3.186.0
-      '@aws-sdk/util-user-agent-node': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/util-user-agent-node': 3.186.0
       '@aws-sdk/util-utf8-browser': 3.186.0
       '@aws-sdk/util-utf8-node': 3.186.0
       entities: 2.2.0
@@ -1104,13 +1101,13 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/credential-provider-ini@3.186.0(aws-crt@1.17.1):
+  /@aws-sdk/credential-provider-ini@3.186.0:
     resolution: {integrity: sha512-ecrFh3MoZhAj5P2k/HXo/hMJQ3sfmvlommzXuZ/D1Bj2yMcyWuBhF1A83Fwd2gtYrWRrllsK3IOMM5Jr8UIVZA==}
     engines: {node: '>= 12.0.0'}
     dependencies:
       '@aws-sdk/credential-provider-env': 3.186.0
       '@aws-sdk/credential-provider-imds': 3.186.0
-      '@aws-sdk/credential-provider-sso': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-sso': 3.186.0
       '@aws-sdk/credential-provider-web-identity': 3.186.0
       '@aws-sdk/property-provider': 3.186.0
       '@aws-sdk/shared-ini-file-loader': 3.186.0
@@ -1130,15 +1127,15 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/credential-provider-node@3.186.0(aws-crt@1.17.1):
+  /@aws-sdk/credential-provider-node@3.186.0:
     resolution: {integrity: sha512-HIt2XhSRhEvVgRxTveLCzIkd/SzEBQfkQ6xMJhkBtfJw1o3+jeCk+VysXM0idqmXytctL0O3g9cvvTHOsUgxOA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@aws-sdk/credential-provider-env': 3.186.0
       '@aws-sdk/credential-provider-imds': 3.186.0
-      '@aws-sdk/credential-provider-ini': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-ini': 3.186.0
       '@aws-sdk/credential-provider-process': 3.186.0
-      '@aws-sdk/credential-provider-sso': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/credential-provider-sso': 3.186.0
       '@aws-sdk/credential-provider-web-identity': 3.186.0
       '@aws-sdk/property-provider': 3.186.0
       '@aws-sdk/shared-ini-file-loader': 3.186.0
@@ -1183,11 +1180,11 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/credential-provider-sso@3.186.0(aws-crt@1.17.1):
+  /@aws-sdk/credential-provider-sso@3.186.0:
     resolution: {integrity: sha512-mJ+IZljgXPx99HCmuLgBVDPLepHrwqnEEC/0wigrLCx6uz3SrAWmGZsNbxSEtb2CFSAaczlTHcU/kIl7XZIyeQ==}
     engines: {node: '>= 12.0.0'}
     dependencies:
-      '@aws-sdk/client-sso': 3.186.0(aws-crt@1.17.1)
+      '@aws-sdk/client-sso': 3.186.0
       '@aws-sdk/property-provider': 3.186.0
       '@aws-sdk/shared-ini-file-loader': 3.186.0
       '@aws-sdk/types': 3.186.0
@@ -1923,7 +1920,7 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/util-user-agent-node@3.186.0(aws-crt@1.17.1):
+  /@aws-sdk/util-user-agent-node@3.186.0:
     resolution: {integrity: sha512-oWZR7hN6NtOgnT6fUvHaafgbipQc2xJCRB93XHiF9aZGptGNLJzznIOP7uURdn0bTnF73ejbUXWLQIm8/6ue6w==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -1934,7 +1931,6 @@ packages:
     dependencies:
       '@aws-sdk/node-config-provider': 3.186.0
       '@aws-sdk/types': 3.186.0
-      aws-crt: 1.17.1
       tslib: 2.6.1
     dev: false
 
@@ -3671,22 +3667,6 @@ packages:
       '@hapi/hoek': 9.3.0
     dev: false
 
-  /@httptoolkit/websocket-stream@6.0.1:
-    resolution: {integrity: sha512-A0NOZI+Glp3Xgcz6Na7i7o09+/+xm2m0UCU8gdtM2nIv6/cjLmhMZMqehSpTlgbx9omtLmV8LVqOskPEyWnmZQ==}
-    dependencies:
-      '@types/ws': 8.5.5
-      duplexify: 3.7.1
-      inherits: 2.0.4
-      isomorphic-ws: 4.0.1(ws@7.5.9)
-      readable-stream: 2.3.8
-      safe-buffer: 5.2.1
-      ws: 7.5.9
-      xtend: 4.0.2
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: false
-
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
     engines: {node: '>=10.10.0'}
@@ -4517,10 +4497,10 @@ packages:
       '@babel/runtime': 7.22.6
     dev: false
 
-  /@react-native-community/cli-clean@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-clean@11.3.5:
     resolution: {integrity: sha512-1+7BU962wKkIkHRp/uW3jYbQKKGtU7L+R3g59D8K6uLccuxJYUBJv18753ojMa6SD3SAq5Xh31bAre+YwVcOTA==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       execa: 5.1.1
       prompts: 2.4.2
@@ -4528,10 +4508,10 @@ packages:
       - encoding
     dev: false
 
-  /@react-native-community/cli-config@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-config@11.3.5:
     resolution: {integrity: sha512-fMblIsHlUleKfGsgWyjFJYfx1SqrsnhS/QXfA8w7iT6GrNOOjBp5UWx8+xlMDFcmOb9e42g1ExFDKl3n8FWkxQ==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       cosmiconfig: 5.2.1
       deepmerge: 4.3.1
@@ -4549,13 +4529,13 @@ packages:
       - supports-color
     dev: false
 
-  /@react-native-community/cli-doctor@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-doctor@11.3.5:
     resolution: {integrity: sha512-+4BuFHjoV4FFjX5y60l0s6nS0agidb1izTVwsFixeFKW73LUkOLu+Ae5HI94RAFEPE4ePEVNgYX3FynIau6K0g==}
     dependencies:
-      '@react-native-community/cli-config': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-platform-android': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-platform-ios': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-config': 11.3.5
+      '@react-native-community/cli-platform-android': 11.3.5
+      '@react-native-community/cli-platform-ios': 11.3.5
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       command-exists: 1.2.9
       envinfo: 7.10.0
@@ -4574,11 +4554,11 @@ packages:
       - encoding
     dev: false
 
-  /@react-native-community/cli-hermes@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-hermes@11.3.5:
     resolution: {integrity: sha512-+3m34hiaJpFel8BlJE7kJOaPzWR/8U8APZG2LXojbAdBAg99EGmQcwXIgsSVJFvH8h/nezf4DHbsPKigIe33zA==}
     dependencies:
-      '@react-native-community/cli-platform-android': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-platform-android': 11.3.5
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       hermes-profile-transformer: 0.0.6
       ip: 1.1.8
@@ -4586,10 +4566,10 @@ packages:
       - encoding
     dev: false
 
-  /@react-native-community/cli-platform-android@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-platform-android@11.3.5:
     resolution: {integrity: sha512-s4Lj7FKxJ/BofGi/ifjPfrA9MjFwIgYpHnHBSlqtbsvPoSYzmVCU2qlWM8fb3AmkXIwyYt4A6MEr3MmNT2UoBg==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       execa: 5.1.1
       glob: 7.2.3
@@ -4598,10 +4578,10 @@ packages:
       - encoding
     dev: false
 
-  /@react-native-community/cli-platform-ios@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-platform-ios@11.3.5:
     resolution: {integrity: sha512-ytJC/YCFD7P+KuQHOT5Jzh1ho2XbJEjq71yHa1gJP2PG/Q/uB4h1x2XpxDqv5iXU6E250yjvKMmkReKTW4CTig==}
     dependencies:
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       execa: 5.1.1
       fast-xml-parser: 4.2.7
@@ -4611,15 +4591,15 @@ packages:
       - encoding
     dev: false
 
-  /@react-native-community/cli-plugin-metro@11.3.5(@babel/core@7.22.9)(encoding@0.1.13):
+  /@react-native-community/cli-plugin-metro@11.3.5(@babel/core@7.22.9):
     resolution: {integrity: sha512-r9AekfeLKdblB7LfWB71IrNy1XM03WrByQlUQajUOZAP2NmUUBLl9pMZscPjJeOSgLpHB9ixEFTIOhTabri/qg==}
     dependencies:
-      '@react-native-community/cli-server-api': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-server-api': 11.3.5
+      '@react-native-community/cli-tools': 11.3.5
       chalk: 4.1.2
       execa: 5.1.1
-      metro: 0.76.7(encoding@0.1.13)
-      metro-config: 0.76.7(encoding@0.1.13)
+      metro: 0.76.7
+      metro-config: 0.76.7
       metro-core: 0.76.7
       metro-react-native-babel-transformer: 0.76.7(@babel/core@7.22.9)
       metro-resolver: 0.76.7
@@ -4633,11 +4613,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@react-native-community/cli-server-api@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-server-api@11.3.5:
     resolution: {integrity: sha512-PM/jF13uD1eAKuC84lntNuM5ZvJAtyb+H896P1dBIXa9boPLa3KejfUvNVoyOUJ5s8Ht25JKbc3yieV2+GMBDA==}
     dependencies:
       '@react-native-community/cli-debugger-ui': 11.3.5
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-tools': 11.3.5
       compression: 1.7.4
       connect: 3.7.0
       errorhandler: 1.5.1
@@ -4652,14 +4632,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@react-native-community/cli-tools@11.3.5(encoding@0.1.13):
+  /@react-native-community/cli-tools@11.3.5:
     resolution: {integrity: sha512-zDklE1+ah/zL4BLxut5XbzqCj9KTHzbYBKX7//cXw2/0TpkNCaY9c+iKx//gZ5m7U1OKbb86Fm2b0AKtKVRf6Q==}
     dependencies:
       appdirsjs: 1.2.7
       chalk: 4.1.2
       find-up: 5.0.0
       mime: 2.6.0
-      node-fetch: 2.6.12(encoding@0.1.13)
+      node-fetch: 2.6.12
       open: 6.4.0
       ora: 5.4.1
       semver: 6.3.1
@@ -4674,19 +4654,19 @@ packages:
       joi: 17.9.2
     dev: false
 
-  /@react-native-community/cli@11.3.5(@babel/core@7.22.9)(encoding@0.1.13):
+  /@react-native-community/cli@11.3.5(@babel/core@7.22.9):
     resolution: {integrity: sha512-wMXgKEWe6uesw7vyXKKjx5EDRog0QdXHxdgRguG14AjQRao1+4gXEWq2yyExOTi/GDY6dfJBUGTCwGQxhnk/Lg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@react-native-community/cli-clean': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-config': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-clean': 11.3.5
+      '@react-native-community/cli-config': 11.3.5
       '@react-native-community/cli-debugger-ui': 11.3.5
-      '@react-native-community/cli-doctor': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-hermes': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-plugin-metro': 11.3.5(@babel/core@7.22.9)(encoding@0.1.13)
-      '@react-native-community/cli-server-api': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-tools': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli-doctor': 11.3.5
+      '@react-native-community/cli-hermes': 11.3.5
+      '@react-native-community/cli-plugin-metro': 11.3.5(@babel/core@7.22.9)
+      '@react-native-community/cli-server-api': 11.3.5
+      '@react-native-community/cli-tools': 11.3.5
       '@react-native-community/cli-types': 11.3.5
       chalk: 4.1.2
       commander: 9.5.0
@@ -4741,7 +4721,7 @@ packages:
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
-      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(encoding@0.1.13)(react@18.2.0)
+      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(react@18.2.0)
     dev: false
 
   /@rushstack/eslint-patch@1.3.2:
@@ -4892,12 +4872,6 @@ packages:
 
   /@types/stylis@4.2.0:
     resolution: {integrity: sha512-n4sx2bqL0mW1tvDf/loQ+aMX7GQD3lc3fkCMC55VFNDu/vBOabO+LTIeXKM14xK0ppk5TUGcWRjiSpIlUpghKw==}
-    dev: false
-
-  /@types/ws@8.5.5:
-    resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
-    dependencies:
-      '@types/node': 20.4.7
     dev: false
 
   /@types/yargs-parser@21.0.0:
@@ -5061,13 +5035,13 @@ packages:
       uri-js: 4.4.1
     dev: false
 
-  /amazon-cognito-identity-js@6.3.1(encoding@0.1.13):
+  /amazon-cognito-identity-js@6.3.1:
     resolution: {integrity: sha512-PxBdufgS8uZShrcIFAsRjmqNXsh/4fXOWUGQOUhKLHWWK1pcp/y+VeFF48avXIWefM8XwsT3JlN6m9J2eHt4LA==}
     dependencies:
       '@aws-crypto/sha256-js': 1.2.2
       buffer: 4.9.2
       fast-base64-decode: 1.0.0
-      isomorphic-unfetch: 3.1.0(encoding@0.1.13)
+      isomorphic-unfetch: 3.1.0
       js-cookie: 2.2.1
     transitivePeerDependencies:
       - encoding
@@ -5263,21 +5237,21 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /aws-amplify@5.3.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3):
+  /aws-amplify@5.3.6(react-native@0.72.3):
     resolution: {integrity: sha512-qJWFDK8BLoe42hfVOSlFv5LpKHh9ROCWec6y0D5JsBcGCLhKvOmyy6rjholB1tBe1gbIqUYO+cfiVhYSAYHCrg==}
     dependencies:
-      '@aws-amplify/analytics': 6.5.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/api': 5.4.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/auth': 5.6.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/cache': 5.1.6(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/core': 5.8.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/datastore': 4.7.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/geo': 2.3.0(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/interactions': 5.2.6(aws-crt@1.17.1)(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/notifications': 1.6.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/predictions': 5.5.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/pubsub': 5.5.0(encoding@0.1.13)(react-native@0.72.3)
-      '@aws-amplify/storage': 5.9.0(encoding@0.1.13)(react-native@0.72.3)
+      '@aws-amplify/analytics': 6.5.0(react-native@0.72.3)
+      '@aws-amplify/api': 5.4.0(react-native@0.72.3)
+      '@aws-amplify/auth': 5.6.0(react-native@0.72.3)
+      '@aws-amplify/cache': 5.1.6(react-native@0.72.3)
+      '@aws-amplify/core': 5.8.0(react-native@0.72.3)
+      '@aws-amplify/datastore': 4.7.0(react-native@0.72.3)
+      '@aws-amplify/geo': 2.3.0(react-native@0.72.3)
+      '@aws-amplify/interactions': 5.2.6(react-native@0.72.3)
+      '@aws-amplify/notifications': 1.6.0(react-native@0.72.3)
+      '@aws-amplify/predictions': 5.5.0(react-native@0.72.3)
+      '@aws-amplify/pubsub': 5.5.0(react-native@0.72.3)
+      '@aws-amplify/storage': 5.9.0(react-native@0.72.3)
       tslib: 2.6.1
     transitivePeerDependencies:
       - aws-crt
@@ -5286,35 +5260,9 @@ packages:
       - react-native
     dev: false
 
-  /aws-crt@1.17.1:
-    resolution: {integrity: sha512-co9Y8jUKSrfHcr5+wK6kGzaTMlNy0nNdOhAvyl5FlZttYqIvKRzsQFNa08qPIgFGIhYZRV9KJbx+geYXkWL3AQ==}
-    requiresBuild: true
-    dependencies:
-      '@aws-sdk/util-utf8-browser': 3.259.0
-      '@httptoolkit/websocket-stream': 6.0.1
-      axios: 0.24.0
-      buffer: 6.0.3
-      crypto-js: 4.1.1
-      mqtt: 4.3.7
-      process: 0.11.10
-    transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - supports-color
-      - utf-8-validate
-    dev: false
-
   /axe-core@4.7.2:
     resolution: {integrity: sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==}
     engines: {node: '>=4'}
-    dev: false
-
-  /axios@0.24.0:
-    resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
-    dependencies:
-      follow-redirects: 1.15.2
-    transitivePeerDependencies:
-      - debug
     dev: false
 
   /axios@0.26.0:
@@ -5519,13 +5467,6 @@ packages:
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
-    dev: false
-
-  /buffer@6.0.3:
-    resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
@@ -5798,13 +5739,6 @@ packages:
     engines: {node: ^12.20.0 || >=14}
     dev: false
 
-  /commist@1.1.0:
-    resolution: {integrity: sha512-rraC8NXWOEjhADbZe9QBNzLAN5Q3fsTPQtBV+fEVj6xKIgDgNiEVE6ZNfHpZOqfQ21YUzfVNUXLOEZquYvQPPg==}
-    dependencies:
-      leven: 2.1.0
-      minimist: 1.2.8
-    dev: false
-
   /commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
     dev: false
@@ -5833,16 +5767,6 @@ packages:
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-    dev: false
-
-  /concat-stream@2.0.0:
-    resolution: {integrity: sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==}
-    engines: {'0': node >= 6.0}
-    dependencies:
-      buffer-from: 1.1.2
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-      typedarray: 0.0.6
     dev: false
 
   /connect@3.7.0:
@@ -5912,10 +5836,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: false
-
-  /crypto-js@4.1.1:
-    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
     dev: false
 
   /css-color-keywords@1.0.0:
@@ -6107,24 +6027,6 @@ packages:
       tslib: 2.6.1
     dev: false
 
-  /duplexify@3.7.1:
-    resolution: {integrity: sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==}
-    dependencies:
-      end-of-stream: 1.4.4
-      inherits: 2.0.4
-      readable-stream: 2.3.8
-      stream-shift: 1.0.1
-    dev: false
-
-  /duplexify@4.1.2:
-    resolution: {integrity: sha512-fz3OjcNCHmRP12MJoZMPglx8m4rrFP8rovnk4vT8Fs+aonZoCwGg10dSsQsfP/E62eZcPTMSMP6686fu9Qlqtw==}
-    dependencies:
-      end-of-stream: 1.4.4
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-      stream-shift: 1.0.1
-    dev: false
-
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
@@ -6148,18 +6050,6 @@ packages:
   /encodeurl@1.0.2:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
     engines: {node: '>= 0.8'}
-    dev: false
-
-  /encoding@0.1.13:
-    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
-    dependencies:
-      iconv-lite: 0.6.3
-    dev: false
-
-  /end-of-stream@1.4.4:
-    resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
-    dependencies:
-      once: 1.4.0
     dev: false
 
   /enhanced-resolve@5.15.0:
@@ -7040,13 +6930,6 @@ packages:
       tslib: 2.6.1
     dev: false
 
-  /help-me@3.0.0:
-    resolution: {integrity: sha512-hx73jClhyk910sidBB7ERlnhMlFsJJIBqSVMFDwPN8o2v9nmp5KgLq1Xz1Bf1fCMMZ6mPrX159iG0VLy/fPMtQ==}
-    dependencies:
-      glob: 7.2.3
-      readable-stream: 3.6.2
-    dev: false
-
   /hermes-estree@0.12.0:
     resolution: {integrity: sha512-+e8xR6SCen0wyAKrMT3UD0ZCCLymKhRgjEB5sS28rKiFir/fXgLoeRilRUssFCILmGHb+OvHDUlhxs0+IEyvQw==}
     dev: false
@@ -7088,13 +6971,6 @@ packages:
   /human-signals@4.3.1:
     resolution: {integrity: sha512-nZXjEF2nbo7lIw3mgYjItAfgQXog3OjJogSbKa2CQIIvSGWcKgeJnQlNXip6NglNzYH45nSRiEVimMvYL8DDqQ==}
     engines: {node: '>=14.18.0'}
-    dev: false
-
-  /iconv-lite@0.6.3:
-    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      safer-buffer: 2.1.2
     dev: false
 
   /idb@5.0.6:
@@ -7393,21 +7269,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /isomorphic-unfetch@3.1.0(encoding@0.1.13):
+  /isomorphic-unfetch@3.1.0:
     resolution: {integrity: sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==}
     dependencies:
-      node-fetch: 2.6.12(encoding@0.1.13)
+      node-fetch: 2.6.12
       unfetch: 4.2.0
     transitivePeerDependencies:
       - encoding
-    dev: false
-
-  /isomorphic-ws@4.0.1(ws@7.5.9):
-    resolution: {integrity: sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==}
-    peerDependencies:
-      ws: '*'
-    dependencies:
-      ws: 7.5.9
     dev: false
 
   /jest-environment-node@29.6.2:
@@ -7513,10 +7381,6 @@ packages:
 
   /js-cookie@2.2.1:
     resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
-    dev: false
-
-  /js-sdsl@4.3.0:
-    resolution: {integrity: sha512-mifzlm2+5nZ+lEcLJMoBK0/IH/bDg8XnJfd/Wq6IP+xoCjLZsTOnV2QpxlVbX9bMnkl5PdEjNtBJ9Cj1NjifhQ==}
     dev: false
 
   /js-tokens@4.0.0:
@@ -7662,11 +7526,6 @@ packages:
     resolution: {integrity: sha512-qJhlO9cGXi6hBGKoxEG/sKZDAHD5Hnu9Hs4WbOY3pCWXDhw0N8x1NenNzm2EnNLkLkk7J2SdxAkDSbb6ftT+UQ==}
     dependencies:
       language-subtag-registry: 0.3.22
-    dev: false
-
-  /leven@2.1.0:
-    resolution: {integrity: sha512-nvVPLpIHUxCUoRLrFqTgSxXJ614d8AgQoWl7zPe/2VadE8+1dpU3LBhowRuBAcuwruWtOdD8oYC9jDNJjXDPyA==}
-    engines: {node: '>=0.10.0'}
     dev: false
 
   /leven@3.1.0:
@@ -7823,14 +7682,14 @@ packages:
       rimraf: 3.0.2
     dev: false
 
-  /metro-config@0.76.7(encoding@0.1.13):
+  /metro-config@0.76.7:
     resolution: {integrity: sha512-CFDyNb9bqxZemiChC/gNdXZ7OQkIwmXzkrEXivcXGbgzlt/b2juCv555GWJHyZSlorwnwJfY3uzAFu4A9iRVfg==}
     engines: {node: '>=16'}
     dependencies:
       connect: 3.7.0
       cosmiconfig: 5.2.1
       jest-validate: 29.6.2
-      metro: 0.76.7(encoding@0.1.13)
+      metro: 0.76.7
       metro-cache: 0.76.7
       metro-core: 0.76.7
       metro-runtime: 0.76.7
@@ -7871,14 +7730,14 @@ packages:
       - supports-color
     dev: false
 
-  /metro-inspector-proxy@0.76.7(encoding@0.1.13):
+  /metro-inspector-proxy@0.76.7:
     resolution: {integrity: sha512-rNZ/6edTl/1qUekAhAbaFjczMphM50/UjtxiKulo6vqvgn/Mjd9hVqDvVYfAMZXqPvlusD88n38UjVYPkruLSg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
       connect: 3.7.0
       debug: 2.6.9
-      node-fetch: 2.6.12(encoding@0.1.13)
+      node-fetch: 2.6.12
       ws: 7.5.9
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -8023,7 +7882,7 @@ packages:
       - supports-color
     dev: false
 
-  /metro-transform-worker@0.76.7(encoding@0.1.13):
+  /metro-transform-worker@0.76.7:
     resolution: {integrity: sha512-cGvELqFMVk9XTC15CMVzrCzcO6sO1lURfcbgjuuPdzaWuD11eEyocvkTX0DPiRjsvgAmicz4XYxVzgYl3MykDw==}
     engines: {node: '>=16'}
     dependencies:
@@ -8032,7 +7891,7 @@ packages:
       '@babel/parser': 7.22.7
       '@babel/types': 7.22.5
       babel-preset-fbjs: 3.4.0(@babel/core@7.22.9)
-      metro: 0.76.7(encoding@0.1.13)
+      metro: 0.76.7
       metro-babel-transformer: 0.76.7
       metro-cache: 0.76.7
       metro-cache-key: 0.76.7
@@ -8046,7 +7905,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /metro@0.76.7(encoding@0.1.13):
+  /metro@0.76.7:
     resolution: {integrity: sha512-67ZGwDeumEPnrHI+pEDSKH2cx+C81Gx8Mn5qOtmGUPm/Up9Y4I1H2dJZ5n17MWzejNo0XAvPh0QL0CrlJEODVQ==}
     engines: {node: '>=16'}
     hasBin: true
@@ -8076,10 +7935,10 @@ packages:
       metro-babel-transformer: 0.76.7
       metro-cache: 0.76.7
       metro-cache-key: 0.76.7
-      metro-config: 0.76.7(encoding@0.1.13)
+      metro-config: 0.76.7
       metro-core: 0.76.7
       metro-file-map: 0.76.7
-      metro-inspector-proxy: 0.76.7(encoding@0.1.13)
+      metro-inspector-proxy: 0.76.7
       metro-minify-terser: 0.76.7
       metro-minify-uglify: 0.76.7
       metro-react-native-babel-preset: 0.76.7(@babel/core@7.22.9)
@@ -8088,9 +7947,9 @@ packages:
       metro-source-map: 0.76.7
       metro-symbolicate: 0.76.7
       metro-transform-plugins: 0.76.7
-      metro-transform-worker: 0.76.7(encoding@0.1.13)
+      metro-transform-worker: 0.76.7
       mime-types: 2.1.35
-      node-fetch: 2.6.12(encoding@0.1.13)
+      node-fetch: 2.6.12
       nullthrows: 1.1.1
       rimraf: 3.0.2
       serialize-error: 2.1.0
@@ -8163,44 +8022,6 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.8
-    dev: false
-
-  /mqtt-packet@6.10.0:
-    resolution: {integrity: sha512-ja8+mFKIHdB1Tpl6vac+sktqy3gA8t9Mduom1BA75cI+R9AHnZOiaBQwpGiWnaVJLDGRdNhQmFaAqd7tkKSMGA==}
-    dependencies:
-      bl: 4.1.0
-      debug: 4.3.4
-      process-nextick-args: 2.0.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /mqtt@4.3.7:
-    resolution: {integrity: sha512-ew3qwG/TJRorTz47eW46vZ5oBw5MEYbQZVaEji44j5lAUSQSqIEoul7Kua/BatBW0H0kKQcC9kwUHa1qzaWHSw==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    dependencies:
-      commist: 1.1.0
-      concat-stream: 2.0.0
-      debug: 4.3.4
-      duplexify: 4.1.2
-      help-me: 3.0.0
-      inherits: 2.0.4
-      lru-cache: 6.0.0
-      minimist: 1.2.8
-      mqtt-packet: 6.10.0
-      number-allocator: 1.0.14
-      pump: 3.0.0
-      readable-stream: 3.6.2
-      reinterval: 1.1.0
-      rfdc: 1.3.0
-      split2: 3.2.2
-      ws: 7.5.9
-      xtend: 4.0.2
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /ms@2.0.0:
@@ -8300,7 +8121,7 @@ packages:
       minimatch: 3.1.2
     dev: false
 
-  /node-fetch@2.6.12(encoding@0.1.13):
+  /node-fetch@2.6.12:
     resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
@@ -8309,7 +8130,6 @@ packages:
       encoding:
         optional: true
     dependencies:
-      encoding: 0.1.13
       whatwg-url: 5.0.0
     dev: false
 
@@ -8348,15 +8168,6 @@ packages:
 
   /nullthrows@1.1.1:
     resolution: {integrity: sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==}
-    dev: false
-
-  /number-allocator@1.0.14:
-    resolution: {integrity: sha512-OrL44UTVAvkKdOdRQZIJpLkAdjXGTRda052sN4sO77bKEzYYqWKMBjQvrJFzqygI99gL6Z4u2xctPW1tB8ErvA==}
-    dependencies:
-      debug: 4.3.4
-      js-sdsl: 4.3.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /ob1@0.76.7:
@@ -8724,11 +8535,6 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: false
 
-  /process@0.11.10:
-    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
-    engines: {node: '>= 0.6.0'}
-    dev: false
-
   /promise@8.3.0:
     resolution: {integrity: sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==}
     dependencies:
@@ -8749,13 +8555,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: false
-
-  /pump@3.0.0:
-    resolution: {integrity: sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww==}
-    dependencies:
-      end-of-stream: 1.4.4
-      once: 1.4.0
     dev: false
 
   /punycode@1.3.2:
@@ -8861,7 +8660,7 @@ packages:
       react-native: '>=0.56'
     dependencies:
       fast-base64-decode: 1.0.0
-      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(encoding@0.1.13)(react@18.2.0)
+      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(react@18.2.0)
     dev: false
 
   /react-native-url-polyfill@1.3.0(react-native@0.72.3):
@@ -8869,11 +8668,11 @@ packages:
     peerDependencies:
       react-native: '*'
     dependencies:
-      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(encoding@0.1.13)(react@18.2.0)
+      react-native: 0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(react@18.2.0)
       whatwg-url-without-unicode: 8.0.0-3
     dev: false
 
-  /react-native@0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(encoding@0.1.13)(react@18.2.0):
+  /react-native@0.72.3(@babel/core@7.22.9)(@babel/preset-env@7.22.9)(react@18.2.0):
     resolution: {integrity: sha512-QqISi+JVmCssNP2FlQ4MWhlc4O/I00MRE1/GClvyZ8h/6kdsyk/sOirkYdZqX3+DrJfI3q+OnyMnsyaXIQ/5tQ==}
     engines: {node: '>=16'}
     hasBin: true
@@ -8881,9 +8680,9 @@ packages:
       react: 18.2.0
     dependencies:
       '@jest/create-cache-key-function': 29.6.2
-      '@react-native-community/cli': 11.3.5(@babel/core@7.22.9)(encoding@0.1.13)
-      '@react-native-community/cli-platform-android': 11.3.5(encoding@0.1.13)
-      '@react-native-community/cli-platform-ios': 11.3.5(encoding@0.1.13)
+      '@react-native-community/cli': 11.3.5(@babel/core@7.22.9)
+      '@react-native-community/cli-platform-android': 11.3.5
+      '@react-native-community/cli-platform-ios': 11.3.5
       '@react-native/assets-registry': 0.72.0
       '@react-native/codegen': 0.72.6(@babel/preset-env@7.22.9)
       '@react-native/gradle-plugin': 0.72.11
@@ -9107,10 +8906,6 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /reinterval@1.1.0:
-    resolution: {integrity: sha512-QIRet3SYrGp0HUHO88jVskiG6seqUGC5iAG7AwI/BV4ypGcuqk9Du6YQBUOUqm9c8pw1eyLoIaONifRua1lsEQ==}
-    dev: false
-
   /require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -9174,10 +8969,6 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: false
 
-  /rfdc@1.3.0:
-    resolution: {integrity: sha512-V2hovdzFbOi77/WajaSMXk2OLm+xNIeQdMMuB7icj7bk6zi2F8GGAxigcnDFpJHbNyNcgyJDiP+8nOrY5cZGrA==}
-    dev: false
-
   /rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
     hasBin: true
@@ -9229,10 +9020,6 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
       is-regex: 1.1.4
-    dev: false
-
-  /safer-buffer@2.1.2:
-    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
   /scheduler@0.23.0:
@@ -9420,12 +9207,6 @@ packages:
     engines: {node: '>= 8'}
     dev: false
 
-  /split2@3.2.2:
-    resolution: {integrity: sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==}
-    dependencies:
-      readable-stream: 3.6.2
-    dev: false
-
   /sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: false
@@ -9456,10 +9237,6 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
-    dev: false
-
-  /stream-shift@1.0.1:
-    resolution: {integrity: sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==}
     dev: false
 
   /streamsearch@1.1.0:
@@ -9842,10 +9619,6 @@ packages:
       call-bind: 1.0.2
       for-each: 0.3.3
       is-typed-array: 1.1.12
-    dev: false
-
-  /typedarray@0.0.6:
-    resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: false
 
   /typescript@5.1.6:
