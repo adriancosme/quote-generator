@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import StyledComponentsRegistry from '@/lib/registry'
 import AmplifyProvider from '@/lib/amplify'
+import ModalProvider from '@/context/modal-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AmplifyProvider>
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <ModalProvider>
+            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          </ModalProvider>
         </AmplifyProvider>
       </body>
     </html>
