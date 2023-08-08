@@ -8,20 +8,8 @@ import { ImageBlobContainer } from "./animations/AnimationElements";
 import ImageBlob from "./animations/ImageBlob";
 import AnimatedDownloadButton from "./animations/AnimatedDownloadButton";
 
-interface Props {
-    processingQuote: boolean;
-    setProcessingQuote: Dispatch<SetStateAction<boolean>>;
-    quoteReceived: String | null;
-    setQuoteReceived: Dispatch<SetStateAction<String | null>>;
-}
-
-const QuoteGeneratorModal = ({
-    processingQuote,
-    setProcessingQuote,
-    quoteReceived,
-    setQuoteReceived
-}: Props) => {
-    const { modalState, setModalState } = useModalContext();
+const QuoteGeneratorModal = () => {
+    const { modalState, processingQuote, quoteReceived, setModalState, setProcessingQuote, setQuoteReceived } = useModalContext();
     const handleClose = () => {
         setModalState(false);
         setProcessingQuote(false);

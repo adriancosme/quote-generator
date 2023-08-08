@@ -1,10 +1,9 @@
 'use client'
 
 import { quotesQueryName } from "@/graphql/queries"
+import { GraphQLResult } from "@aws-amplify/api-graphql"
 import { API } from "aws-amplify"
 import { useEffect, useState } from "react"
-import { GraphQLResult } from "@aws-amplify/api-graphql"
-
 interface Quote {
     id: string
     queryName: string
@@ -23,7 +22,7 @@ function isGraphQLResultForquotesQueryName(response: any): response is GraphQLRe
 }
 
 export default function QuotesGeneratedCounter() {
-    const [numberOfQuotes, setNumberOfQuotes] = useState<number | null>(0)
+    const [numberOfQuotes, setNumberOfQuotes] = useState<number>(0)
 
     const getQuotesGenerated = async () => {
         try {
@@ -45,8 +44,6 @@ export default function QuotesGeneratedCounter() {
             setNumberOfQuotes(receivedNumberOfQuotes);
         } catch (error) {
             console.log(error)
-        } finally {
-            setNumberOfQuotes(0)
         }
     }
 

@@ -1,11 +1,10 @@
 // Components
-import { BackgroundImage1, BackgroundImage2, FooterContainer, FooterLink, GradientBackgroundContainer, QuoteGeneratorContainer, QuoteGeneratorInnerContainer, QuoteGeneratorModalContainer, QuoteGeneratorSubtitle, QuoteGeneratorTitle } from "@/components/QuoteGeneratorElements"
+import { BackgroundImage1, BackgroundImage2, FooterContainer, FooterLink, GradientBackgroundContainer, QuoteGeneratorContainer, QuoteGeneratorInnerContainer, QuoteGeneratorSubtitle, QuoteGeneratorTitle } from "@/components/QuoteGeneratorElements"
 import QuotesGeneratedCounter from "@/components/QuotesGeneratedCounter"
 // Assets
 import Cloud1 from '@/assets/cloud-and-thunder.png'
 import Cloud2 from '@/assets/cloudy-weather.png'
 import GenerateQuoteButton from "@/components/GenerateQuoteButton"
-import QuoteGeneratorModal from "@/components/QuoteGeneratorModal"
 import QuoteGenerator from "@/components/QuoteGenerator"
 export default function Home() {
 
@@ -32,7 +31,7 @@ export default function Home() {
       {/* Footer */}
       <FooterContainer>
         <>
-          <QuotesGeneratedCounter />
+          <QuotesGeneratedCounter  />
           <br />
           Developed by <FooterLink href="https://github.com/adriancosme" target="_blank" rel="noopener noreferrer">@adriancosme</FooterLink>
         </>

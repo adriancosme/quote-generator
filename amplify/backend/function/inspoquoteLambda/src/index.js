@@ -47,6 +47,7 @@ async function updateQuoteDDBObject() {
             ReturnValues: "UPDATED_NEW"
         };
         const quoteResponse = await dynamoDb.update(quoteParams).promise();
+        console.log('Quote updated successfully', quoteResponse);
         return quoteResponse;
     } catch (err) {
         console.log('Error updating DynamoDB table', err);
@@ -128,6 +129,7 @@ async function svgToImage(svg) {
     const selectedBG = BACKGROUND_IMAGES[randomIndex];
 
     const svgBuffer = Buffer.from(svg);
+    console.log('Before save');
     const image = await sharp(selectedBG)
         .composite([{ input: svgBuffer, top: 0, left: 0 }])
         .resize({
@@ -135,7 +137,7 @@ async function svgToImage(svg) {
             height: IMAGE_HEIGHT,
         })
         .toFile(IMAGE_PATH);
-
+    console.log('After save');
     try {
         updateQuoteDDBObject();
     } catch (err) {
