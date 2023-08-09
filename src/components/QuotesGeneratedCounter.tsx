@@ -1,5 +1,6 @@
 'use client'
 
+import { useModalContext } from "@/context/modal-provider"
 import { quotesQueryName } from "@/graphql/queries"
 import { GraphQLResult } from "@aws-amplify/api-graphql"
 import { API } from "aws-amplify"
@@ -22,7 +23,14 @@ function isGraphQLResultForquotesQueryName(response: any): response is GraphQLRe
 }
 
 export default function QuotesGeneratedCounter() {
+    const { quoteReceived } = useModalContext();
     const [numberOfQuotes, setNumberOfQuotes] = useState<number>(0)
+
+    useEffect(() => {
+        if(quoteReceived !== null) {
+            setNumberOfQuotes(numberOfQuotes + 1);
+        }
+    }, [quoteReceived])
 
     const getQuotesGenerated = async () => {
         try {
